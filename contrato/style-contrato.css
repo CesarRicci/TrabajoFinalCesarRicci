@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #181414;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: #1d1d1d;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #464645;
+    border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #747272;
+}
+
+.header{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(26, 25, 25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.header h1{
+    font-size: 1.5em;
+    padding: 10px;
+    color: white;
+}
+
+
+.header__ul{
+    width: 700px;
+    height: 100%;
+    color: beige;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.header a{
+    text-decoration: none;
+    color: white;
+}
+
+.header__li{
+    padding: 10px;
+    transition: .6s;
+}
+
+.header__li:hover{
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+    padding: 15px;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    )
+    ,url(../imagenes/hero.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h2{
+    font-size: 2em;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.hero p{
+    width: 550px;
+    height: 300px;
+    font-size: 1.3em;
+    color: white;
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    height: 300px;
+    background-color: rgb(24, 20, 20);
+    color: rgb(141, 141, 141);
+}
+
+.footer__flex{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.footer__flex a{
+    margin-top: 30px;
+    color: rgb(141, 141, 141);
+    text-decoration: none;
+    list-style: none;
+}
+.footer__flex a:hover{
+    color: rgb(185, 185, 185);
+}
+
+.contact{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+
+.img{
+    display: none;
+}
+
+.boton{
+    width: 130px;
+    height: 50px;
+    background-color: #1d1d1d;
+    color: white;
+    font-weight: bold;  
+    margin-bottom: 20px;
+    border: 1px solid white;
+}
+
+
+@media screen and (max-width:930px){
+
+    .hero{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.7),
+            rgba(0,0,0,0.7)
+        )
+        ,url(../imagenes/hero.jpg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hero h2{
+        font-size: 2em;
+        color: white;
+        margin-bottom: 30px;
+        position: relative;
+        top: -100px;
+    }
+    
+    .hero p{
+        width: 350px;
+        height: 250px;
+        font-size: 1.3em;
+        color: white;
+        text-align: center;
+        position: relative;
+        top: -70px;
+    }
+    
+    footer{
+        display: flex;
+        height: 300px;
+        background-color: rgb(24, 20, 20);
+        color: rgb(141, 141, 141);
+    }
+    
+    .footer__flex{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-left: 10px;
+        font-weight: bold;
+    }
+
+    .header__nav{
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        width: 250px;
+        height: 100vh;
+        right: -250px;
+        padding: 40px;
+        top: 0;
+        z-index: 1;
+        transition: all 600ms;
+    }
+
+    .header__ul{
+        flex-direction: column;
+    }
+
+    .header__li{
+        margin-top: 50px;
+        margin-left: 0;
+    }
+
+    .header__ul a{
+        color: white;
+    }
+
+    #back-menu{
+        position: fixed;
+        top: 0;
+        width: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        display: none;
+    }
+
+    .img{
+        display: block;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+    }
+
+    .img img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .h2{
+        margin-top: 100px;
+    }
+    
+
+}

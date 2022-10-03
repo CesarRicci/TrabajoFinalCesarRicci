@@ -1,0 +1,40 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.footer__flex li{
+    margin-left:-30px ;
+}
+
+
+.header__ul{
+    margin: auto;
+}
+
+
+table{
+    border: 1px solid rgb(226, 226, 226);
+}
+
+tr{
+    
+     
+    color: aliceblue;
+}
+
+td{
+    
+    align-items: center;
+}
+
+.contact{
+    margin: 25px 0 10px 0;
+}
+
+.h2{
+    margin-bottom: 5px;
+}

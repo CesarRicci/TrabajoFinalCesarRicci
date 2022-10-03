@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>formulario</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="icono.ico">
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/e50a719aa5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section id="header">
+        <header class="header">
+            <h1>Bienes Raíces</h1>
+            <div class="img" id="btn__menu"><img src="../imagenes/bar-de-hamburguesas.png" alt=""></div>
+            <div id="back-menu"></div>
+            <div class="contenedor__nav">
+                <nav class="header__nav" id="nav">
+                    <ul class="header__ul">
+                        <a href="../index.html">
+                            <li class="header__li">Inicio</li>
+                        </a>
+                        <a href="../propiedades/nuestros-departamentos.html">
+                            <li class="header__li">Nuestros Departamentos</li>
+                        </a>
+                        <a href="../propiedades/nuestras-casas.html">
+                            <li class="header__li">Nuestras Casas</li>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </section>
+
+
+    <div class="div-h2">
+        <h2>Ubicación de nuestra agencia</h2>
+    </div>
+    <div class="div-maps">
+        <iframe class="maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3333.4441729941077!2d-60.224215883237335!3d-33.33334387563732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b76791f00b427b%3A0x53e1f3c43f0093b8!2sBelgrano%20380%2C%20B2900%20AEH%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1664168220063!5m2!1ses-419!2sar"
+             style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="div-h2 ">
+        <h2>Formulario de contacto</h2>
+    </div>
+    <div class="content">
+        <div class="contact-wrapper">
+            <div class="contact-form">
+                <h3 class="h3">Contacta con nosotros</h3>
+                <form action="">
+                    <p>
+                        <label>Nombre Completo</label>
+                        <input type="text" required minlength="3" maxlength="40" autocomplete="off" >
+                    </p>
+                    <p>
+                        <label>Dirección de Email</label>
+                        <input type="email" required minlength="10" maxlength="40" name="email">
+                    </p>
+                    <p>
+                        <label>Teléfono</label>
+                        <input type="tel" required name="phone" pattern="[0-9]+">
+                    </p>
+                    <p>
+                        <label>Asunto</label>
+                        <input type="text" autocomplete="off" minlength="1" required maxlength="50"  name="affair">
+                    </p>
+                    <p class="block">
+                        <label>Mensaje</label>
+                        <textarea class="textarea" required name="message" minlength="1"  maxlength="500" rows="3"></textarea>
+                    </p>
+                    <p class="block">
+                        <button>
+                            Enviar
+                        </button>
+                    </p>
+                </form>
+            </div>
+            <div class="contact-info">
+                <div class="container-img">
+                    <img class="img-logo" src="logo.png">
+                </div>
+                <h4>Mas Info</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i>
+
+                        <a href="https://goo.gl/maps/2cdz52qpc7MBVmWB6" target="_blank"
+                            class="contact"><b>Ubicación:</b>
+                            Belgrano 380, San Nicolas</a>
+
+                    </li>
+                    <li><i class="fa-brands fa-whatsapp"></i>
+
+                        <a href="https://wa.me/543364272483"  target="_blank"
+                            class="contact"><b>WhatsApp:</b> 3364272483 </a>
+
+                    </li>
+                    <li><i class="fas fa-envelope-open-text"></i>
+
+                        <a href="mailto:milericci@live.com" class="contact"> <b>Gmail:</b>
+                            milericci@live.com</a>
+
+                    </li>
+                    <li><i class="fa-brands fa-instagram"></i>
+
+                        <a href="https://www.instagram.com/mricci_bienesraices/" target="_blank" class="contact">
+                            <b>Instagram:</b>
+                            Mricci_Bienesraices</a>
+
+                    </li>
+                </ul>
+                <p>Milena Ricci.com</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="javas-form.js"></script>
+</body>
+
+
+
+</html>
